@@ -3,5 +3,6 @@ export const siteNavItems = [
   { label: "Canada's National Team", href: "/national-team" },
   { label: "Equipment & Blade Sharpening", href: "/equipment" },
   { label: "Skating Training", href: "/training" },
+  { label: "Best Moments", href: "/best-moments" },
   { label: "Carisa", href: "/carisa" },
 ] as const;

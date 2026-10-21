@@ -9,6 +9,7 @@ const defaultFooterLinks = [
   { label: "Carisa", href: "/carisa" },
   { label: "Competitions", href: "/national-team" },
   { label: "Training", href: "/training" },
+  { label: "Best Moments", href: "/best-moments" },
   { label: "Equipment", href: "/equipment" },
 ] as const;
 
@@ -29,6 +30,11 @@ const pageFooterContent: Record<
   "/national-team": {
     heading: "Canada's Short Track Speed Skating.",
     tagline: "Canada's National Team · Short Track Speed Skating",
+    useMainNav: true,
+  },
+  "/best-moments": {
+    heading: "Canada's Best Moments.",
+    tagline: "The races that made Canadian short track history.",
     useMainNav: true,
   },
 };
