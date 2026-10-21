@@ -1,4 +1,4 @@
-import { HeroNavButtons } from "@/components/hero-nav-buttons";
+import { HeroBackground } from "@/components/home/hero-background";
 import { RevealSection } from "@/components/site/reveal-section";
 import { SiteNav } from "@/components/site-nav";
 import { bodyText, contentMaxWidth, eyebrowText, sectionPad } from "@/lib/site/ui";
@@ -10,17 +10,14 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative min-h-[100dvh] w-full overflow-hidden">
+        <HeroBackground />
         <div
-          className="absolute inset-0 bg-[url('/images/william-hero.png')] bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 z-[1] bg-linear-to-b from-[#070b14]/80 via-[#070b14]/55 to-[#070b14]/85"
           aria-hidden
         />
-        <div
-          className="absolute inset-0 bg-linear-to-b from-[#070b14]/80 via-[#070b14]/55 to-[#070b14]/85"
-          aria-hidden
-        />
-        <div className="absolute inset-0 z-10 flex flex-col">
+        <div className="pointer-events-none absolute inset-0 z-10 flex flex-col">
           <div
-            className={`${contentMaxWidth} pointer-events-none flex flex-1 flex-col items-center justify-center px-5 pb-32 pt-24 text-center sm:px-6 sm:pt-28 lg:px-8`}
+            className={`${contentMaxWidth} flex flex-1 flex-col items-center justify-center px-5 pb-32 pt-24 text-center sm:px-6 sm:pt-28 lg:px-8`}
           >
             <p className={eyebrowText}>Short Track Speed Skating</p>
             <h1
@@ -33,7 +30,6 @@ export default function Home() {
               Training. Competition. Discipline. One lap at a time.
             </p>
           </div>
-          <HeroNavButtons />
         </div>
       </section>
 
