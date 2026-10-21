@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { siteNavItems } from "@/lib/site-nav-items";
+import { getSiteNavLabel, siteNavItems } from "@/lib/site-nav-items";
 
 type SiteNavProps = {
   activeHref: string;
@@ -50,7 +50,7 @@ export function SiteNav({ activeHref }: SiteNavProps) {
                 }`}
                 onClick={() => setMenuOpen(false)}
               >
-                {item.label}
+                {getSiteNavLabel(item)}
               </Link>
             );
           })}

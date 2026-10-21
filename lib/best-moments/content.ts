@@ -75,10 +75,10 @@ export const bestMoments: BestMoment[] = [
     category: "olympic-glory",
     description:
       "Charles Hamelin won Olympic gold in the men's 500m at Vancouver 2010, racing in front of a home crowd at the Pacific Coliseum.",
-    youtubeId: "4DJ8o0geMvk",
-    watchUrl: "https://www.youtube.com/watch?v=4DJ8o0geMvk",
+    youtubeId: "llSTR61mGwg",
+    watchUrl: "https://youtu.be/llSTR61mGwg",
     source: "Official Vancouver 2010 Olympic video",
-    watchLinkLabel: "Watch the race on YouTube",
+    watchLinkLabel: "Watch on YouTube",
   },
   {
     id: "dandjinou-world-tour-1500",

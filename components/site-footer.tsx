@@ -2,14 +2,18 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { siteNavItems } from "@/lib/site-nav-items";
+import { getSiteNavLabel, siteNavItems } from "@/lib/site-nav-items";
 
 const defaultFooterLinks = [
   { label: "Home", href: "/" },
   { label: "Carisa", href: "/carisa" },
   { label: "Competitions", href: "/national-team" },
   { label: "Training", href: "/training" },
-  { label: "Best Moments", href: "/best-moments" },
+  {
+    label: "Canada's Best Races",
+    labelFr: "Les meilleures courses du Canada",
+    href: "/best-moments",
+  },
   { label: "Equipment", href: "/equipment" },
 ] as const;
 
@@ -42,7 +46,11 @@ const pageFooterContent: Record<
 const bodyMuted =
   "text-sm leading-[1.8] text-[#9aa8bc] sm:text-[0.9375rem] lg:leading-[1.85]";
 
-function FooterNav({ links }: { links: readonly { label: string; href: string }[] }) {
+function FooterNav({
+  links,
+}: {
+  links: readonly { label: string; href: string; labelFr?: string }[];
+}) {
   return (
     <nav
       aria-label="Footer"
@@ -54,7 +62,7 @@ function FooterNav({ links }: { links: readonly { label: string; href: string }[
           href={item.href}
           className="text-sm text-white/75 transition-colors duration-200 hover:text-white"
         >
-          {item.label}
+          {getSiteNavLabel(item)}
         </Link>
       ))}
     </nav>

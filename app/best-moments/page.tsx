@@ -21,7 +21,7 @@ export default function BestMomentsPage() {
           >
             <p className={eyebrowText}>Canada · Short Track</p>
             <h1 className="mt-4 font-display text-5xl font-bold uppercase tracking-wide text-white sm:text-6xl lg:text-7xl">
-              Canada&apos;s Best Moments
+              Canada&apos;s Best Races
             </h1>
             <div className="mt-8 h-px w-16 bg-[#e31837] sm:mt-10" aria-hidden />
             <p className={`mt-8 max-w-2xl sm:mt-10 ${bodyText}`}>
