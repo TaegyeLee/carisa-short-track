@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { CarisaRaceGallery } from "@/components/carisa/race-gallery";
 import {
   JourneyTimeline,
   type JourneyTimelineItem,
@@ -145,6 +146,12 @@ export default function CarisaPage() {
                 />
               </div>
             </figure>
+          </div>
+        </RevealSection>
+
+        <RevealSection className="border-t border-[#202a3a] bg-[#0a0f1c]">
+          <div className={`${contentMaxWidth} ${sectionPad}`}>
+            <CarisaRaceGallery />
           </div>
         </RevealSection>
 
