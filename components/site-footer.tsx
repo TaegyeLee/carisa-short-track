@@ -83,33 +83,10 @@ export function SiteFooter() {
   if (isHomePage) {
     return (
       <footer className="border-t border-[#202a3a] bg-[#070b14]">
-        <div className="mx-auto max-w-[1280px] px-5 py-16 text-center sm:px-6 lg:px-8 lg:py-20">
-          <p className="font-display text-3xl font-bold uppercase tracking-wide text-white sm:text-4xl">
-            Canada&apos;s Short Track Speed Skating
-          </p>
-          <div className="mx-auto mt-5 h-px w-16 bg-[#e31837]" aria-hidden />
-          <p className="mt-6 text-sm text-white/90 sm:text-base">
-            A personal project by Carisa Lee
-          </p>
-          <p className="mt-2 text-xs tracking-[0.08em] text-[#9aa8bc] sm:text-sm">
-            Grade 8 · Harry Bowes Public School · 2026
-          </p>
-          <p className={`mx-auto mt-8 max-w-2xl ${bodyMuted}`}>
-            Built to share the excitement of short track speed skating with people
-            across Canada — a country with a strong tradition and a bright future
-            in the sport.
-          </p>
-          <p className={`mx-auto mt-6 max-w-2xl ${bodyMuted}`}>
-            This website will continue to grow and be updated with new information,
-            athletes, training, equipment, and stories from the world of short
-            track.
-          </p>
-          <div className="mt-10 sm:mt-12">
-            <FooterNav links={siteNavItems} />
-          </div>
-          <p className="mt-10 text-xs text-[#9aa8bc]/90 sm:mt-12">
-            Copyright © 2026 Carisa Lee. All rights reserved.
-          </p>
+        <div className="mx-auto max-w-[1280px] px-5 py-10 text-center sm:px-6 lg:px-8">
+          <FooterNav links={siteNavItems} />
+          <p className="mt-7 text-sm text-[#9aa8bc]">A personal project by Carisa Lee · Sharing the excitement of Canadian short track</p>
+          <p className="mt-3 text-xs text-[#9aa8bc]/80">© 2026 Carisa Lee. All rights reserved.</p>
         </div>
       </footer>
     );
